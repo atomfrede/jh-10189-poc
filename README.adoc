@@ -8,22 +8,24 @@ It cointains no authentication, service discovery to keep it simple and focus on
 It contains of the following services/components.
 
 Gateway::
-The Gateway is the main entry point and decides to which service a request is routed. 
+The Gateway is the main entry point and decides to which service a request is routed.
+It will be implemented with https://cloud.spring.io/spring-cloud-gateway/reference/html/[Spring Cloud Gateway]. 
+An alternative would be e.g. https://github.com/zalando/skipper[skipper].
 
 LayoutService::
-The layout service is based on https://github.com/zalando/tailor[tailor] and is responsible for composing partial html to the final page result.
+The layout service is based on https://github.com/zalando/tailor[tailor] and is responsible for composing partial html to the final page result. As a starting point we will support only two fragments (the shell/menu and one content fragment)
 
 BookService::
-A service providing a json api and an ui fragment via vue.js
+A service providing a json api and an ui fragment via vue.js. It will be implemented using https://spring.io/projects/spring-boot[spring boot].
 
 AuthorService::
-A service providing a json api and an ui fragment via react.js
+A service providing a json api and an ui fragment via react.js. It will be implemented using TBD
 
 UserService::
-A service providing a json api and an ui fragment via server side rendering (thymeleaf)
+A service providing a json api and an ui fragment via server side rendering. It will be implemented usind TBD
 
 ShellService::
-A service providing the header menu for the website via server side rendering.
+A service providing the header menu for the website via server side rendering. It will be implemented using https://micronaut.io/[micronaut]
 
 
 
