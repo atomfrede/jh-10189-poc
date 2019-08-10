@@ -1,0 +1,29 @@
+= JHipster microfrontends with Project Mosaic
+
+This repository is a simple and small proof of concept for using https://opensource.zalando.com/[zalando's] https://www.mosaic9.org/[project mosaic] (in particular tailor) for doing micro frontends.
+It cointains no authentication, service discovery to keep it simple and focus on the composition of UI fragments.
+
+== Overview
+
+It contains of the following services/components.
+
+Gateway::
+The Gateway is the main entry point and decides to which service a request is routed. 
+
+LayoutService::
+The layout service is based on https://github.com/zalando/tailor[tailor] and is responsible for composing partial html to the final page result.
+
+BookService::
+A service providing a json api and an ui fragment via vue.js
+
+AuthorService::
+A service providing a json api and an ui fragment via react.js
+
+UserService::
+A service providing a json api and an ui fragment via server side rendering (thymeleaf)
+
+ShellService::
+A service providing the header menu for the website via server side rendering.
+
+
+
