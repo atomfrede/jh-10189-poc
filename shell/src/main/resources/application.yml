@@ -1,0 +1,15 @@
+micronaut:
+  server:
+    port: 8081
+  application:
+    name: shell
+  router:
+    static-resources:
+      default:
+        enabled: true
+        mapping: "/static/**"
+        paths: "classpath:static"
+  io:
+    watch:
+      paths: src/main
+      restart: true
