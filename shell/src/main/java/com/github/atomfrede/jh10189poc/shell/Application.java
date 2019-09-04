@@ -1,4 +1,4 @@
-package shell;
+package com.github.atomfrede.jh10189poc.shell;
 
 import io.micronaut.runtime.Micronaut;
 

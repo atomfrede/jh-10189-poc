@@ -1,0 +1,13 @@
+{
+    "name": "layout-service",
+    "version": "0.0.1-SNAPSHOT",
+    "description": "A streaming layout service for the JHipster platform.",
+    "author": "JHipster Contributers",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "node-tailor": "^3.9.2"
+    }
+}

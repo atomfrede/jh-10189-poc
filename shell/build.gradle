@@ -42,7 +42,7 @@ dependencies {
 
 test.classpath += configurations.developmentOnly
 
-mainClassName = "shell.Application"
+mainClassName = "com.github.atomfrede.jh10189poc.shell.Application"
 // use JUnit 5 platform
 test {
     useJUnitPlatform()
