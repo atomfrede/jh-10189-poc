@@ -1,13 +1,14 @@
 micronaut:
   server:
     port: 8081
+    context-path: "/shell"
   application:
     name: shell
   router:
     static-resources:
       default:
         enabled: true
-        mapping: "/static/**"
+        mapping: "/shell/static/**"
         paths: "classpath:static"
   io:
     watch:

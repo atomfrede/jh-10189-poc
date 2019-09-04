@@ -15,10 +15,10 @@ public class GatewayApplication {
 	public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 		//@formatter:off
 		return builder.routes()
-				.route("shell-api", r -> r.path("/shell/api/*")
+				.route("shell-api", r -> r.path("/shell/*")
 						.uri("http://localhost:8081"))
-				.route("shell-assets", r -> r.path("/shell/assets/*")
-						.uri("http://localhost:8081"))
+				.route("shell-assets", r -> r.path("/shell/static/*")
+						.uri("http://localhost:8081/shell/static"))
 				.route("default-layout", r -> r.path("/*")
 						.uri("http://localhost:9000/index"))
 				.build();
